@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BLEUCAD | Impression 3D, dessin industriel et formations CAO</title>
+  <meta name="description" content="BLEUCAD accompagne vos projets d'impression 3D, de dessin industriel et de formation sur AutoCAD, SolidWorks, Revit et CATIA.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="scroll-progress" aria-hidden="true"></div>
+
+  <header class="site-header" data-header>
+    <a class="brand" href="#accueil" aria-label="Retour à l'accueil BLEUCAD">
+      <span class="brand-mark" aria-hidden="true">
+        <span></span><span></span><span></span><span></span>
+      </span>
+      <span class="brand-copy">
+        <strong>BLEUCAD</strong>
+        <small>Solution 3D & CAO</small>
+      </span>
+    </a>
+
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-nav-toggle>
+      <span></span>
+      <span></span>
+      <span></span>
+      <span class="sr-only">Menu</span>
+    </button>
+
+    <nav class="site-nav" id="site-nav" data-nav>
+      <a href="#services">Services</a>
+      <a href="#processus">Processus</a>
+      <a href="#formations">Formations</a>
+      <a href="#realisations">Réalisations</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <a class="header-cta" href="#devis">Demander un devis</a>
+  </header>
+
+  <main>
+    <section class="hero" id="accueil">
+      <img class="hero-media" src="assets/bleucad-hero.png" alt="Atelier BLEUCAD avec imprimantes 3D et pièces techniques imprimées">
+      <div class="hero-grid" aria-hidden="true"></div>
+
+      <div class="hero-content">
+        <p class="eyebrow reveal">Bureau technique et fabrication additive</p>
+        <h1 class="reveal">BLEUCAD</h1>
+        <p class="hero-lead reveal">Impression 3D professionnelle, dessin industriel et formations CAO pour transformer vos idées en pièces concrètes.</p>
+
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#devis">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M5 10l7-7 7 7M5 21h14"/></svg>
+            Lancer un projet
+          </a>
+          <a class="btn btn-secondary" href="#formations">
+            <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h16M4 12h16M4 18h10"/></svg>
+            Voir les formations
+          </a>
+        </div>
+
+        <div class="hero-proof reveal" aria-label="Points forts BLEUCAD">
+          <span>Conception sur mesure</span>
+          <span>Prototypage rapide</span>
+          <span>Pièces fonctionnelles</span>
+        </div>
+      </div>
+
+      <aside class="hero-machine reveal" aria-label="Aperçu de fabrication">
+        <div class="printer-shell">
+          <div class="printer-rail"></div>
+          <div class="printer-head"></div>
+          <div class="printed-part"></div>
+          <div class="print-bed"></div>
+        </div>
+        <div class="machine-status">
+          <span>Production</span>
+          <strong>Active</strong>
+        </div>
+      </aside>
+    </section>
+
+    <section class="quick-strip" aria-label="Expertise principale">
+      <div class="strip-item reveal">
+        <span class="line-icon cube-icon" aria-hidden="true"></span>
+        <strong>Impression 3D</strong>
+        <small>FDM, SLA, prototypes, pièces uniques</small>
+      </div>
+      <div class="strip-item reveal">
+        <span class="line-icon draft-icon" aria-hidden="true"></span>
+        <strong>Dessin industriel</strong>
+        <small>Plans 2D, modélisation 3D, assemblages</small>
+      </div>
+      <div class="strip-item reveal">
+        <span class="line-icon training-icon" aria-hidden="true"></span>
+        <strong>Formation CAO</strong>
+        <small>AutoCAD, SolidWorks, Revit, CATIA</small>
+      </div>
+      <div class="strip-item reveal">
+        <span class="line-icon support-icon" aria-hidden="true"></span>
+        <strong>Accompagnement</strong>
+        <small>Conseil, optimisation, suivi technique</small>
+      </div>
+    </section>
+
+    <section class="section intro-section" id="devis">
+      <div class="section-copy reveal">
+        <p class="eyebrow">Devis et étude technique</p>
+        <h2>Un projet clair avant la fabrication.</h2>
+        <p>Envoyez votre besoin, un croquis ou un fichier 3D. BLEUCAD vérifie la faisabilité, conseille la matière, ajuste le modèle si nécessaire et prépare une estimation adaptée au volume demandé.</p>
+      </div>
+
+      <form class="quote-panel reveal" data-quote-form>
+        <div class="quote-header">
+          <span>Demande rapide</span>
+          <strong>Réponse technique personnalisée</strong>
+        </div>
+
+        <label>
+          <span>Nom</span>
+          <input type="text" name="name" placeholder="Votre nom" required>
+        </label>
+
+        <label>
+          <span>Service</span>
+          <select name="service" required>
+            <option value="">Choisir un service</option>
+            <option>Impression 3D</option>
+            <option>Dessin industriel</option>
+            <option>Formation AutoCAD</option>
+            <option>Formation SolidWorks</option>
+            <option>Formation Revit</option>
+            <option>Formation CATIA</option>
+          </select>
+        </label>
+
+        <label>
+          <span>Détails du projet</span>
+          <textarea name="message" rows="4" placeholder="Dimensions, matière, quantité, délai, logiciel souhaité..." required></textarea>
+        </label>
+
+        <label class="file-box">
+          <input type="file" name="file" accept=".stl,.step,.stp,.obj,.sldprt,.dwg,.dxf,.pdf">
+          <span>
+            <strong>Ajouter un fichier</strong>
+            STL, STEP, OBJ, SLDPRT, DWG, DXF ou PDF
+          </span>
+        </label>
+
+        <button class="btn btn-primary" type="submit">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M22 2 11 13M22 2l-7 20-4-9-9-4 20-7Z"/></svg>
+          Envoyer la demande
+        </button>
+        <p class="form-note" data-form-note>Vos informations restent confidentielles.</p>
+      </form>
+    </section>
+
+    <section class="section services-section" id="services">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Services BLEUCAD</p>
+        <h2>Du modèle numérique à la pièce prête à tester.</h2>
+        <p>Une offre complète pour les étudiants, makers, bureaux d’études, ateliers et entreprises qui veulent avancer vite avec un résultat propre.</p>
+      </div>
+
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <span class="service-number">01</span>
+          <h3>Impression 3D</h3>
+          <p>Fabrication de prototypes, pièces de remplacement, objets personnalisés et petites séries avec finition contrôlée.</p>
+          <ul>
+            <li>Conseil matière selon usage</li>
+            <li>Optimisation du modèle pour l’impression</li>
+            <li>Pièces fonctionnelles ou décoratives</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">02</span>
+          <h3>Dessin industriel</h3>
+          <p>Création de plans techniques et modèles 3D exploitables pour fabrication, assemblage, présentation ou dossier technique.</p>
+          <ul>
+            <li>Plans 2D cotés et nomenclatures</li>
+            <li>Modélisation mécanique 3D</li>
+            <li>Rétroconception à partir d’une pièce</li>
+          </ul>
+        </article>
+
+        <article class="service-card reveal">
+          <span class="service-number">03</span>
+          <h3>Formations CAO</h3>
+          <p>Parcours pratiques pour apprendre les logiciels utilisés en architecture, mécanique, design produit et industrie.</p>
+          <ul>
+            <li>Exercices basés sur des cas réels</li>
+            <li>Accompagnement débutant à avancé</li>
+            <li>Supports de travail et projets guidés</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <section class="section process-section" id="processus">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Processus</p>
+        <h2>Une méthode simple, technique et rapide.</h2>
+      </div>
+
+      <div class="timeline">
+        <article class="timeline-step reveal">
+          <span>01</span>
+          <h3>Analyse du besoin</h3>
+          <p>Dimensions, usage, contraintes mécaniques, quantité et délai.</p>
+        </article>
+        <article class="timeline-step reveal">
+          <span>02</span>
+          <h3>Préparation CAO</h3>
+          <p>Modélisation, correction du fichier ou mise en plan technique.</p>
+        </article>
+        <article class="timeline-step reveal">
+          <span>03</span>
+          <h3>Choix matière</h3>
+          <p>PLA, PETG, ABS, résine ou matière adaptée au fonctionnement.</p>
+        </article>
+        <article class="timeline-step reveal">
+          <span>04</span>
+          <h3>Fabrication</h3>
+          <p>Paramétrage, impression, contrôle visuel et ajustements.</p>
+        </article>
+        <article class="timeline-step reveal">
+          <span>05</span>
+          <h3>Livraison</h3>
+          <p>Pièce prête à tester, modifier ou intégrer dans votre projet.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="capabilities">
+      <div class="capability-visual reveal">
+        <img src="assets/bleucad-logo.png" alt="Logo BLEUCAD">
+      </div>
+      <div class="capability-copy reveal">
+        <p class="eyebrow">Capacités</p>
+        <h2>Un atelier pensé pour les projets concrets.</h2>
+        <div class="capability-list">
+          <div>
+            <strong>Formats acceptés</strong>
+            <span>STL, OBJ, STEP, STP, SLDPRT, DWG, DXF, PDF</span>
+          </div>
+          <div>
+            <strong>Applications</strong>
+            <span>Prototypes, maquettes, outillages, pièces de rechange, gabarits</span>
+          </div>
+          <div>
+            <strong>Accompagnement</strong>
+            <span>Design for manufacturing, correction CAO, amélioration de pièce</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section training-section" id="formations">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Formations logiciels</p>
+        <h2>Apprendre par la pratique, sur des projets réels.</h2>
+      </div>
+
+      <div class="training-grid">
+        <article class="training-card reveal">
+          <span>2D</span>
+          <h3>AutoCAD</h3>
+          <p>Plans techniques, cotation, calques, blocs, mise en page et impression professionnelle.</p>
+        </article>
+        <article class="training-card reveal">
+          <span>3D</span>
+          <h3>SolidWorks</h3>
+          <p>Pièces, assemblages, mises en plan, contraintes, conception mécanique et préparation impression.</p>
+        </article>
+        <article class="training-card reveal">
+          <span>BIM</span>
+          <h3>Revit</h3>
+          <p>Modélisation bâtiment, familles, vues, coupes, nomenclatures et organisation de projet.</p>
+        </article>
+        <article class="training-card reveal">
+          <span>CAO</span>
+          <h3>CATIA</h3>
+          <p>Surfaces, pièces complexes, assemblages industriels et méthodologie de conception avancée.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="section projects-section" id="realisations">
+      <div class="section-heading reveal">
+        <p class="eyebrow">Réalisations possibles</p>
+        <h2>Des solutions pour l’atelier, l’école et l’entreprise.</h2>
+      </div>
+
+      <div class="project-grid">
+        <article class="project-card reveal">
+          <div class="project-image project-image-one" aria-hidden="true"></div>
+          <h3>Pièces de rechange</h3>
+          <p>Reproduire une pièce cassée, ajuster une fixation ou créer un élément introuvable.</p>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image project-image-two" aria-hidden="true"></div>
+          <h3>Prototypes fonctionnels</h3>
+          <p>Tester une forme, un mécanisme ou un assemblage avant fabrication finale.</p>
+        </article>
+        <article class="project-card reveal">
+          <div class="project-image project-image-three" aria-hidden="true"></div>
+          <h3>Supports pédagogiques</h3>
+          <p>Créer des maquettes et exercices pour comprendre la conception et la fabrication.</p>
+        </article>
+      </div>
+    </section>
+
+    <section class="cta-section" id="contact">
+      <div class="cta-copy reveal">
+        <p class="eyebrow">Contact</p>
+        <h2>Vous avez une idée, un fichier ou une pièce à refaire ?</h2>
+        <p>Envoyez votre demande et BLEUCAD vous accompagne sur la meilleure solution: conception, impression 3D ou formation.</p>
+      </div>
+      <div class="cta-actions reveal">
+        <a class="btn btn-light" href="#devis">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8Z"/><path d="M14 2v6h6M8 13h8M8 17h6"/></svg>
+          Préparer mon devis
+        </a>
+        <a class="btn btn-outline-light" href="mailto:contact@bleucad.com">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path d="m4 4 8 8 8-8M4 4h16v16H4Z"/></svg>
+          contact@bleucad.com
+        </a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div>
+      <strong>BLEUCAD</strong>
+      <span>Impression 3D, dessin industriel et formations CAO.</span>
+    </div>
+    <a href="#accueil">Retour en haut</a>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
